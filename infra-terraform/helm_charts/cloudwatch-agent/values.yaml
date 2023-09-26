@@ -1,0 +1,2 @@
+namespace: "cloudwatch-${deployment_stage}"
+clustername: "${cluster_name}"

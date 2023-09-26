@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  cluster.name: {{ .Values.clustername }}
+  logs.region: us-east-2
+  http.server: ""
+  http.port: ""
+  read.head: ""
+  read.tail: ""
+kind: ConfigMap
+metadata:
+  name: fluent-bit-cluster-info
+  namespace: {{ .Values.namespace }}
